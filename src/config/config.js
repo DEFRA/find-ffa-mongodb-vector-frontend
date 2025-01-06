@@ -164,6 +164,12 @@ export const config = convict({
       }
     }
   },
+  backendApiEndpoint: {
+    doc: 'Redis cache username',
+    format: String,
+    default: 'http://localhost:3001',
+    env: 'BACKEND_API_ENDPOINT'
+  },
   redis: /** @type {Schema<RedisConfig>} */ ({
     host: {
       doc: 'Redis cache host',

@@ -1,0 +1,9 @@
+@use "govuk-frontend" as *;
+
+.sticky {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    bottom: 0px;
+}

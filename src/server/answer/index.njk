@@ -1,0 +1,43 @@
+{% extends 'layouts/page.njk' %}
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-body" data-testid="app-page-body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam urna, congue ut leo quis, ornare dapibus ipsum. Cras eros tortor, mollis non dignissim non, mattis non sem. Integer quis quam ipsum. Praesent vitae hendrerit neque. Duis eu ligula massa. Vivamus tempor suscipit dui, vel mollis leo fermentum nec. Aenean sodales quam libero, eget consequat velit porttitor sit amet. Ut condimentum, urna ut mollis faucibus, velit justo volutpat velit, quis malesuada felis risus a purus. Maecenas ullamcorper faucibus consequat. Suspendisse elementum elit semper purus bibendum pharetra.
+
+Morbi fermentum, odio nec efficitur rutrum, quam nibh pulvinar turpis, ut ullamcorper ex neque tincidunt massa. Suspendisse porta mattis nibh ac dignissim. Pellentesque dictum sem at sem porta, ac tincidunt sapien finibus. Morbi auctor mi neque, id malesuada odio lacinia ac. Maecenas turpis justo, maximus tempus enim ac, ultricies ornare dolor. Quisque blandit tempus mi, tempus fermentum purus tincidunt sed. Donec rutrum tristique sapien id blandit.
+
+Sed vel placerat felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In euismod sem et risus blandit luctus. Nulla sodales eu nulla eget varius. Vestibulum gravida diam id ex maximus, ac feugiat lacus tempus. In hendrerit faucibus mattis. Nulla sit amet justo non tellus vulputate faucibus. Ut sem lorem, tempus et nisl eu, posuere posuere tortor. Quisque non pretium magna, eget gravida neque. Phasellus ac varius diam. Nam quam mauris, pretium non eros et, ultricies cursus sem.
+
+Etiam sollicitudin, neque et lacinia laoreet, turpis turpis pellentesque nibh, in finibus arcu dui in risus. Vivamus tristique eu lectus maximus tempor. Vestibulum rhoncus tempor elit quis faucibus. Etiam sit amet mi ullamcorper, hendrerit mauris sed, vehicula tortor. Duis convallis dolor justo, ac volutpat ligula venenatis sit amet. Cras orci sapien, gravida et lectus nec, euismod imperdiet diam. Proin ac quam venenatis arcu malesuada faucibus a at metus. Sed molestie dolor vel sollicitudin posuere.
+
+Quisque volutpat risus a libero vulputate, vel suscipit nibh volutpat. Proin eu fringilla libero. Aenean laoreet, elit sit amet pulvinar tempor, metus odio dignissim ligula, in ultrices dui eros a tellus. Etiam eu nisl ac sem blandit finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sollicitudin odio turpis, eget aliquam tellus pellentesque vel. Vestibulum ligula nisl, bibendum in tortor at, venenatis tincidunt orci.
+        </p>
+        <div id="test">
+          <p>Test</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: white;width: 100%;height: 50px;position: sticky;bottom: 0px;">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        {{ govukInput({
+          id: "event-name",
+          name: "eventName"
+        }) }}
+      </div>
+      <div class="govuk-grid-column-one-third">
+        {{ govukButton({
+          text: "Send"
+        }) }}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

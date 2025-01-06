@@ -111,7 +111,8 @@ export default {
                 loadPaths: [
                   path.join(dirname, 'src/client/stylesheets'),
                   path.join(dirname, 'src/server/common/components'),
-                  path.join(dirname, 'src/server/common/templates/partials')
+                  path.join(dirname, 'src/server/common/templates/partials'),
+                  path.join(dirname, 'src/server/answer')
                 ],
                 quietDeps: true,
                 sourceMapIncludeSources: true,
